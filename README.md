@@ -1,13 +1,12 @@
 # XML / JSON 格式轉換器
 
-##說明
+## 說明
 測試遇到 XML 和 JSON 資料需要不停轉換 <br />
-所以才使用 WSDL URL 匯入方式，寫出一個小工具 <br />
-這個是我的的版本，需要的話可以改成自己喜歡的樣式和轉換條件
+所以才使用 WSDL URL 匯入的方式，使用 CHAT GPT 輔助寫出一個小工具 <br />
 
-##實作
-1.ConvertUtil 處理轉換的部分
-2.WsdlUtil 處理下載 WSDL、自動編譯成 Assembly的功能
+## 實作
+1. ConvertUtil : 使用 Type 將 Json 或 Xml 做轉換
+2. WsdlUtil : 處理下載 WSDL、自動編譯成 Assembly、將 Assembly 轉型成 Class 的功能
 
-##待改進的地方
-1.因為直接使用反射 Class 去做轉型，所以下拉式選單的物件有些不是輸入輸出的物件
+## 待改進的地方
+1. 因為直接使用反射 Class 去做轉型，所以下拉式選單的物件有些不是輸入輸出的物件
